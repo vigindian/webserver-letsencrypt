@@ -3,6 +3,10 @@
 This solution has been tested in Ubuntu and should work in all Debian systems <br />
 
 ## Solution Details
+
+My Site: https://bestideas.duckdns.org
+<br />
+
 Web Server: Apache<br />
 DNS: Duck DNS (https://www.duckdns.org)<br />
 OS: Ubuntu<br />

@@ -16,7 +16,7 @@ case "$1" in
         echo
         ;;
     "deploy_cert")
-        sudo systemctl restart apache2
+        sudo systemctl reload apache2
         ;;
     "unchanged_cert")
         ;;

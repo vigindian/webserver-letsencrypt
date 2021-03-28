@@ -31,7 +31,8 @@ a. Prepare wordpress config in apache2/conf/wordpress_yourdomain.conf<br />
 b. Update wordpress-db password in ~/.secret_wordpressdbpass<br />
 c. Setup wordpress in your server using apache2/setup_wordpress.sh<br />
 d. Manage your Wordpress site from localhost/blog<br />
-e. If your site is located in Cloud, setup /etc/wordpress/config-yourdomainname.php and access your site using public_ip or dns_name<br /><br />
+e. If your site is located in Cloud, setup /etc/wordpress/config-yourdomainname.php and access your site using public_ip or dns_name<br />
+f. Install some useful wordpress plugins using apache2/wordpress_plugins.sh. Plugin list is controlled by the variable PLUGINS in the script.<br /><br />
 
 ## References:
 https://www.splitbrain.org/blog/2017-08/10-homeassistant_duckdns_letsencrypt<br />

@@ -1,4 +1,4 @@
-# Apache Webserver with SSL Certs using letsencrypt
+# Apache Webserver with SSL Certs using Letsencrypt
 
 This solution has been tested in Ubuntu and should work in all Debian systems <br />
 
@@ -32,7 +32,12 @@ b. Update wordpress-db password in ~/.secret_wordpressdbpass<br />
 c. Setup wordpress in your server using apache2/setup_wordpress.sh<br />
 d. Manage your Wordpress site from localhost/blog<br />
 e. If your site is located in Cloud, setup /etc/wordpress/config-yourdomainname.php and access your site using public_ip or dns_name<br />
-f. Install some useful wordpress plugins using apache2/wordpress_plugins.sh. Plugin list is controlled by the variable PLUGINS in the script.<br /><br />
+f. Install some useful wordpress plugins using apache2/wordpress_plugins.sh. Plugin list is controlled by the variable PLUGINS in the script.<br />
+
+### 3.2. Apache Web Application Firewall (WAF) (Optional)
+a. Update apache waf config files in apache2/conf/<br />
+b. Update config file names in apache2/apache_waf.sh and<br />
+c. Setup Apache ModSecurity with apache2/apache_waf.sh<br /><br />
 
 ## References:
 https://www.splitbrain.org/blog/2017-08/10-homeassistant_duckdns_letsencrypt<br />

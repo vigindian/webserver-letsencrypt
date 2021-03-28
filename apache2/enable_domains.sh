@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONFS="bestideas"
+CONFS="default bestideas"
 
 for CONF in $CONFS
 do

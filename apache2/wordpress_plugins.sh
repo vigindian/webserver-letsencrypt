@@ -13,6 +13,9 @@ function wpAccess(){
 	if [ "$currAccess" != "www-data" ];then
 		sudo chown -R root:www-data /etc/wordpress
 		sudo chmod -R 775 /etc/wordpress
+
+		sudo chown -R root:www-data /usr/share/wordpress/wp-content
+		sudo chmod -R 775 /usr/share/wordpress/wp-content
 	else
 		echo "INFO: wordpress permissions already set"
 	fi

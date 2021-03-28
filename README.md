@@ -2,16 +2,33 @@
 
 This solution has been tested in Ubuntu and should work in all Debian systems <br />
 
-## 1. Letsencrypt Automation
-a. Prepare domains.txt, config and hook.sh specific to your domain<br />
-b. Run letsencrypt/duckdns_letsencrypt.sh<br /><br />
+## Solution Details
+Web Server: Apache<br />
+DNS: Duck DNS (https://www.duckdns.org)<br />
+OS: Ubuntu<br />
+SSL Certs: Letsencrypt (https://letsencrypt.org/) <br />
+Blog template (Optional): Wordpress<br />
 
-## 2. Apache Config
+## 1. DuckDNS
+a. Create DNS record for your domain. I chose this as it is free for 5 domains
+
+## 2. Letsencrypt Automation
+a. Prepare domains.txt, config and hook.sh specific to your domain<br />
+b. Update duckdns token for the domain in ~/.secret_domainname
+c. Run letsencrypt/duckdns_letsencrypt.sh<br /><br />
+
+## 3. Apache Config
 a. Install apache and enable required modules with apache2/setup_apache2.sh<br />
 b. Prepare your domain specific config in apache2/conf/<br />
 c. Enable your domain config with apache2/enable_domains.sh<br /><br />
 
-References:
+### 3.1. Wordpress (Optional)
+a. Prepare wordpress config in apache2/conf/wordpress_yourdomain.conf<br />
+b. Update wordpress-db password in ~/.secret_wordpressdbpass<br />
+c. Setup wordpress in your server using apache2/setup_wordpress.sh<br />
+d. Manage your Wordpress site from localhost/blog<br />
+e. If your site is located in Cloud, setup /etc/wordpress/config-yourdomainname.php and access your site using public_ip or dns_name
 
+## References:
 https://www.splitbrain.org/blog/2017-08/10-homeassistant_duckdns_letsencrypt<br />
 https://github.com/lukas2511/dehydrated.git<br />

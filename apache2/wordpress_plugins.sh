@@ -34,7 +34,7 @@ WPHOME="/usr/share/wordpress/"
 WPBIN="/usr/local/bin/wp"
 
 #wordpress plugins to install - separate by whitespace
-PLUGINS="protection-against-ddos disable-wp-rest-api disable-xml-rpc-pingback all-in-one-wp-migration google-site-kit"
+PLUGINS="protection-against-ddos disable-wp-rest-api disable-xml-rpc-pingback all-in-one-wp-migration google-site-kit newsletter"
 
 #install wp cli
 if [ ! -x ${WPBIN} ];then
